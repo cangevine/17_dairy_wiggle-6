@@ -19,7 +19,7 @@ public class Simulator {
 		for(int d=0; d<2; d++){
 			workers[d+4] = new Moover();
 		}
-		
+		// @BC: What a great touch! Very nicely done, Sam.
 		//Changing the first paramater of simulateTime will change the number of months (month = 4 weeks) simulated
 		//Changing the second parameter changes the number of days per week they work
 		simulateTime(6, 7);
@@ -48,7 +48,10 @@ public class Simulator {
 			System.out.println("");
 		}
 	}
-	
+	// @BC: Very interesting idea! Effective and nicely implemented.
+	//		At some point it might be worth having a conversation about the stylistic choices here -- 
+	//		there's a risk it will obfuscate functionality rather than simplify it.
+	//		In this case, I think it works nicely.
 	public void action(String s){
 		//A different method for the sake of organization, s determines the action performed
 		//Prints after the paycheck is earned

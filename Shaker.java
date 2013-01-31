@@ -1,3 +1,4 @@
+// @BC: Simple, clean. Nicely implemented.
 public class Shaker extends Employee {
 	public Shaker(){
 		super(100, "Shaker");

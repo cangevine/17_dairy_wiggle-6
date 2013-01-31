@@ -4,6 +4,7 @@ public abstract class Employee {
 	private double multiplier;
 	private int basePay;
 	private int totalPay;
+	// @BC: Great touch to have this
 	private String job;
 	
 	public Employee(int n, String s){
@@ -38,7 +39,7 @@ public abstract class Employee {
 		roundMultiplier();
 		return job + ", Salary: " + basePay + ", Multiplier:" + multiplier + ", Total Pay : " + totalPay; 
 	}
-	
+	// @BC: Useful to have two mutators here
 	public void changeMulitplier(double n){
 		multiplier = multiplier + n;
 	}
@@ -46,7 +47,7 @@ public abstract class Employee {
 	public void setMultiplier(int s){
 		multiplier = s;
 	}
-	
+	// @BC: A stylistic recommendation: in the method above, "set" is assigning a value; in the method below, "set" is increasing a value
 	public void setPay(int n){
 		totalPay += n;
 	}
